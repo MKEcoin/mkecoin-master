@@ -61,7 +61,7 @@ extern "C" {
 #define DP(x)
 #endif
 
-//atomic units of moneros
+//atomic units of MKEcoins
 #define ATOMS 64
 
 //for printing large ints

@@ -30,7 +30,7 @@ set(cn_deserialize_sources
   cn_deserialize.cpp
   )
 
-monero_add_executable(cn_deserialize
+MKEcoin_add_executable(cn_deserialize
   ${cn_deserialize_sources}
   ${cn_deserialize_private_headers})
 
@@ -53,7 +53,7 @@ set(object_sizes_sources
   object_sizes.cpp
   )
 
-monero_add_executable(object_sizes
+MKEcoin_add_executable(object_sizes
   ${object_sizes_sources}
   ${object_sizes_private_headers})
 

@@ -34,7 +34,7 @@ try:
 except:
   tests = DEFAULT_TESTS
 
-N_MONERODS = 1
+N_MKEcoinDS = 1
 N_WALLETS = 4
 
 MKcoind_base = [builddir + "/bin/MKcoind", "--regtest", "--fixed-difficulty", "1", "--offline", "--no-igd", "--p2p-bind-port", "MKcoind_p2p_port", "--rpc-bind-port", "MKcoind_rpc_port", "--zmq-rpc-bind-port", "MKcoind_zmq_port", "--non-interactive", "--disable-dns-checkpoints", "--check-updates", "disabled", "--rpc-ssl", "disabled", "--log-level", "1"]
@@ -45,7 +45,7 @@ processes = []
 outputs = []
 ports = []
 
-for i in range(N_MONERODS):
+for i in range(N_MKEcoinDS):
   command_lines.append([str(18180+i) if x == "MKcoind_rpc_port" else str(18280+i) if x == "MKcoind_p2p_port" else str(18380+i) if x == "MKcoind_zmq_port" else x for x in MKcoind_base])
   outputs.append(open(builddir + '/tests/functional_tests/MKcoind' + str(i) + '.log', 'a+'))
   ports.append(18180+i)

@@ -62,8 +62,8 @@
 #include "language_base.h"
 #include "singleton.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "mnemonic"
+#undef MKEcoin_DEFAULT_LOG_CATEGORY
+#define MKEcoin_DEFAULT_LOG_CATEGORY "mnemonic"
 
 namespace crypto
 {

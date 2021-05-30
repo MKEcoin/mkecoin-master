@@ -27,8 +27,8 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#ifndef MONERO_DEVICE_TREZOR_H
-#define MONERO_DEVICE_TREZOR_H
+#ifndef MKEcoin_DEVICE_TREZOR_H
+#define MKEcoin_DEVICE_TREZOR_H
 
 #include "trezor.hpp"
 #include "device/device.hpp"
@@ -68,7 +68,7 @@ namespace trezor {
       size_t m_num_transations_to_sign;
 
       void transaction_versions_check(const ::tools::wallet2::unsigned_tx_set & unsigned_tx, hw::tx_aux_data & aux_data);
-      void transaction_pre_check(std::shared_ptr<messages::MKEcoin::MoneroTransactionInitRequest> init_msg);
+      void transaction_pre_check(std::shared_ptr<messages::MKEcoin::MKEcoinTransactionInitRequest> init_msg);
       void transaction_check(const protocol::tx::TData & tdata, const hw::tx_aux_data & aux_data);
       void device_state_reset_unsafe() override;
       void live_refresh_start_unsafe();
@@ -118,14 +118,14 @@ namespace trezor {
       /**
        * Get address. Throws.
        */
-      std::shared_ptr<messages::MKEcoin::MoneroAddress> get_address(
+      std::shared_ptr<messages::MKEcoin::MKEcoinAddress> get_address(
           const boost::optional<std::vector<uint32_t>> & path = boost::none,
           const boost::optional<cryptonote::network_type> & network_type = boost::none);
 
       /**
        * Get watch key from device. Throws.
        */
-      std::shared_ptr<messages::MKEcoin::MoneroWatchKey> get_view_key(
+      std::shared_ptr<messages::MKEcoin::MKEcoinWatchKey> get_view_key(
           const boost::optional<std::vector<uint32_t>> & path = boost::none,
           const boost::optional<cryptonote::network_type> & network_type = boost::none);
 
@@ -206,4 +206,4 @@ namespace trezor {
 
 }
 }
-#endif //MONERO_DEVICE_TREZOR_H
+#endif //MKEcoin_DEVICE_TREZOR_H
