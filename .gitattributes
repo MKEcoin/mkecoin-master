@@ -1,8 +1,0 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-echo“#master”>> README.md 
-git init 
-git add README.md 
-git commit -m“first commit” 
-git remote add origin git@github.com：insocapital / master.git
- git push -u origin master
