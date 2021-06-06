@@ -1,4 +1,4 @@
-# Portions Copyright (c) 2017-2019, The MKcoin Project
+# Portions Copyright (c) 2018-2021, The MKcoin Project
 # This file is based off of the https://code.google.com/archive/p/ios-cmake/
 # It has been altered for MKcoin iOS development
 #
