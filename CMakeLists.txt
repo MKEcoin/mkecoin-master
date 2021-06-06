@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, The MKcoin Project
+# Copyright (c) 2018-2021, The MKcoin Project
 #
 # All rights reserved.
 #

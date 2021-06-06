@@ -1,6 +1,6 @@
 # MKEcoin Blockchain Utilities
 
-Copyright (c) 2014-2019, The MKEcoin Project
+Copyright (c) 2018-2021, The MKEcoin Project
 
 ## Introduction
 
